@@ -4,11 +4,13 @@ import com.shetty.ipldashboard.model.Team;
 import com.shetty.ipldashboard.repository.MatchRepository;
 import com.shetty.ipldashboard.repository.TeamRepository;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@CrossOrigin
 public class TeamController {
 
     private TeamRepository teamRepository;
